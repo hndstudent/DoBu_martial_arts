@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Classes | DoBu Martial Arts</title>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #8B0000; /* dark red */
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo {
+      max-width: 90px;
+      margin-bottom: 0;
+    }
+
+    header h1 {
+      font-family: Georgia, serif;
+      font-size: 2em;
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+      width: 100%;
+      text-align: center;
+    }
+
+    nav a {
+      color: #f2f2f2;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #8B0000; /* dark red */
+      background-color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto 50px;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #8B0000; /* dark red */
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .intro-para {
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+      text-align: center;
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    .class-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .class-card {
+      display: flex;
+      background: #f8f8f8;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      border-left: 6px solid #8B0000; /* dark red */
+      align-items: center;
+    }
+
+    .class-card img {
+      width: 160px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-right: 20px;
+    }
+
+    .class-info h3 {
+      color: #8B0000; /* dark red */
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .class-info p {
+      margin: 0;
+      color: #111;
+    }
+
+    footer {
+      background-color: #8B0000; /* dark red */
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 700px) {
+      .class-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .class-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .class-card img {
+        margin: 0 0 15px 0;
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="dobu-logo.png" alt="DoBu Martial Arts Logo" class="logo" />
+    <h1>DoBu Martial Arts</h1>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="classes.html">Classes</a>
+    <a href="timetable.html">Timetable</a>
+    <a href="instructors.html">Instructors</a>
+    <a href="membership.html">Membership</a>
+    <a href="forum.html">Forum</a>
+    <a href="login-signup.html">Login/Signup</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <h2>Our Martial Arts & Fitness Classes</h2>
+
+  <p class="intro-para">Discover a range of classes designed to improve your skills, fitness, and confidence.</p>
+
+  <div class="class-grid">
+
+    <div class="class-card">
+      <img src="jiu-jitsu.png" alt="Jiu-jitsu class" />
+      <div class="class-info">
+        <h3>Jiu-jitsu</h3>
+        <p>Learn the art of ground grappling and submissions. Perfect for all levels.</p>
+      </div>
+    </div>
+
+    <div class="class-card">
+      <img src="karate.png" alt="Karate class" />
+      <div class="class-info">
+        <h3>Karate</h3>
+        <p>Build strength, precision, and discipline through traditional Karate training.</p>
+      </div>
+    </div>
+
+    <div class="class-card">
+      <img src="judo.png" alt="Judo class" />
+      <div class="class-info">
+        <h3>Judo</h3>
+        <p>A powerful grappling martial art focused on throws and pins, suitable for all skill levels.</p>
+      </div>
+    </div>
+
+    <div class="class-card">
+      <img src="muay-thai.png" alt="Muay Thai class" />
+      <div class="class-info">
+        <h3>Muay Thai</h3>
+        <p>Known as the "Art of Eight Limbs", a high-intensity workout building cardio and strength.</p>
+      </div>
+    </div>
+
+    <div class="class-card">
+      <img src="self-defence.png" alt="Self-defence course" />
+      <div class="class-info">
+        <h3>Self-Defence Course</h3>
+        <p>6-week beginners’ course teaching practical real-world techniques for confidence and safety.</p>
+      </div>
+    </div>
+
+    <div class="class-card">
+      <img src="personal-training.png" alt="Personal training" />
+      <div class="class-info">
+        <h3>Personal Training</h3>
+        <p>One-on-one coaching tailored to your health, fitness, and martial arts goals.</p>
+      </div>
+    </div>
+
+    <div class="class-card">
+      <img src="kids-class.png" alt="Kids martial arts class" />
+      <div class="class-info">
+        <h3>Kids Martial Arts</h3>
+        <p>Fun and structured sessions improving discipline and fitness for children.</p>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 DoBu Martial Arts. Website by a proud student developer.</p>
+</footer>
+
+</body>
+</html>

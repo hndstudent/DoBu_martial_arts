@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Timetable | DoBu Martial Arts</title>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    /* Header styled like homepage */
+    header {
+      background-color: #8B0000;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo {
+      max-width: 90px;
+      margin-bottom: 0;
+    }
+
+    header h1 {
+      font-family: Georgia, serif;
+      font-size: 2em;
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+      width: 100%;
+      text-align: center;
+    }
+
+    nav a {
+      color: #f2f2f2;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #8B0000;
+      background-color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    /* Main content area */
+    main {
+      max-width: 900px;
+      margin: 30px auto 50px;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #8B0000;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    /* Table styling from your original code */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      overflow: hidden;
+      background: #f8f8f8;
+    }
+
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      font-size: 0.95em;
+    }
+
+    th {
+      background-color: #8B0000;
+      color: white;
+      font-weight: bold;
+    }
+
+    tbody tr:hover {
+      background-color: #ffe5e5;
+    }
+
+    caption {
+      caption-side: top;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 1.1em;
+      color: #8B0000;
+    }
+
+    @media (max-width: 700px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      thead tr {
+        display: none;
+      }
+      tbody tr {
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: 10px;
+      }
+      tbody td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+      }
+      tbody td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        top: 12px;
+        font-weight: bold;
+        color: #8B0000;
+        text-align: left;
+      }
+    }
+
+    /* Footer styled like homepage */
+    footer {
+      background-color: #8B0000;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="dobu-logo.png" alt="DoBu Martial Arts Logo" class="logo" />
+    <h1>DoBu Martial Arts</h1>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="classes.html">Classes</a>
+    <a href="timetable.html">Timetable</a>
+    <a href="instructors.html">Instructors</a>
+    <a href="membership.html">Membership</a>
+    <a href="forum.html">Forum</a>
+    <a href="login-signup.html">Login/Signup</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Class Timetable</h2>
+
+  <table>
+    <caption>Weekly Martial Arts Classes</caption>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Time">06:00–07:30</td>
+        <td data-label="Monday">Jiu-jitsu</td>
+        <td data-label="Tuesday">Karate</td>
+        <td data-label="Wednesday">Judo</td>
+        <td data-label="Thursday">Jiu-jitsu</td>
+        <td data-label="Friday">Muay Thai</td>
+        <td data-label="Saturday">Private tuition</td>
+        <td data-label="Sunday">Private tuition</td>
+      </tr>
+      <tr>
+        <td data-label="Time">08:00–10:00</td>
+        <td data-label="Monday">Muay Thai</td>
+        <td data-label="Tuesday">Private tuition</td>
+        <td data-label="Wednesday">Private tuition</td>
+        <td data-label="Thursday">Private tuition</td>
+        <td data-label="Friday">Jiu-jitsu</td>
+        <td data-label="Saturday">Judo</td>
+        <td data-label="Sunday">Karate</td>
+      </tr>
+      <tr>
+        <td data-label="Time">10:30–12:00</td>
+        <td data-label="Monday">Private tuition</td>
+        <td data-label="Tuesday">Private tuition</td>
+        <td data-label="Wednesday">Private tuition</td>
+        <td data-label="Thursday">Private tuition</td>
+        <td data-label="Friday">Private tuition</td>
+        <td data-label="Saturday">Muay Thai</td>
+        <td data-label="Sunday">Jiu-jitsu</td>
+      </tr>
+      <tr>
+        <td data-label="Time">13:00–14:30</td>
+        <td data-label="Monday">Open mat / personal practice</td>
+        <td data-label="Tuesday">Open mat / personal practice</td>
+        <td data-label="Wednesday">Open mat / personal practice</td>
+        <td data-label="Thursday">Open mat / personal practice</td>
+        <td data-label="Friday">Open mat / personal practice</td>
+        <td data-label="Saturday">Karate</td>
+        <td data-label="Sunday">Judo</td>
+      </tr>
+      <tr>
+        <td data-label="Time">15:00–17:00</td>
+        <td data-label="Monday">Kids jiu-jitsu</td>
+        <td data-label="Tuesday">Kids judo</td>
+        <td data-label="Wednesday">Kids karate</td>
+        <td data-label="Thursday">Kids jiu-jitsu</td>
+        <td data-label="Friday">Kids judo</td>
+        <td data-label="Saturday"></td>
+        <td data-label="Sunday"></td>
+      </tr>
+      <tr>
+        <td data-label="Time">17:30–19:00</td>
+        <td data-label="Monday">Karate</td>
+        <td data-label="Tuesday">Muay Thai</td>
+        <td data-label="Wednesday">Judo</td>
+        <td data-label="Thursday">Jiu-jitsu</td>
+        <td data-label="Friday">Muay Thai</td>
+        <td data-label="Saturday"></td>
+        <td data-label="Sunday"></td>
+      </tr>
+      <tr>
+        <td data-label="Time">19:00–21:00</td>
+        <td data-label="Monday">Jiu-jitsu</td>
+        <td data-label="Tuesday">Judo</td>
+        <td data-label="Wednesday">Jiu-jitsu</td>
+        <td data-label="Thursday">Karate</td>
+        <td data-label="Friday">Private tuition</td>
+        <td data-label="Saturday"></td>
+        <td data-label="Sunday"></td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+
+<footer>
+  <p>&copy; 2025 DoBu Martial Arts. Website by a proud student developer.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book a Free Demo | DoBu Martial Arts</title>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h2 {
+      color: #8B0000;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2em;
+    }
+
+    form {
+      background-color: #f8f8f8;
+      border-left: 6px solid #8B0000;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 3px 10px rgba(139, 0, 0, 0.15);
+      max-width: 700px;
+      margin: 0 auto;
+      font-family: Arial, sans-serif;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #5a0000;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="date"],
+    form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #b22222;
+      border-radius: 4px;
+      font-size: 1em;
+      box-sizing: border-box;
+      background-color: #fff;
+      color: #222;
+    }
+
+    form input[type="text"]:focus,
+    form input[type="email"]:focus,
+    form input[type="date"]:focus,
+    form select:focus {
+      border-color: #8B0000;
+      outline: none;
+      box-shadow: 0 0 4px rgba(139, 0, 0, 0.2);
+    }
+
+    form input[type="submit"] {
+      background-color: #8B0000;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #a00000;
+    }
+  </style>
+</head>
+<body>
+  <h2>Book a Free Demo</h2>
+  <form action="submit_booking.php" method="POST">
+    <label>Full Name:</label>
+    <input type="text" name="name" required />
+
+    <label>Email Address:</label>
+    <input type="email" name="email" required />
+
+    <label>Phone Number:</label>
+    <input type="text" name="phone" required />
+
+    <label>Class Type:</label>
+    <select name="class_type" required>
+      <option value="">-- Select Class --</option>
+      <option value="Karate">Karate</option>
+      <option value="Taekwondo">Taekwondo</option>
+      <option value="Judo">Judo</option>
+      <option value="Muay Thai">Muay Thai</option>
+    </select>
+
+    <label>Preferred Date:</label>
+    <input type="date" name="date" required />
+
+    <input type="submit" value="Book Now" />
+  </form>
+</body>
+</html>

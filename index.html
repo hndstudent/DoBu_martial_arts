@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home | DoBu Martial Arts</title>
+
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #8B0000; /* dark red */
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo {
+      max-width: 90px;
+      margin-bottom: 0;
+    }
+
+    header h1 {
+      font-family: Georgia, serif;
+      font-size: 2em;
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+      width: 100%;
+      text-align: center;
+    }
+
+    nav a {
+      color: #f2f2f2;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #8B0000; /* dark red */
+      background-color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #8B0000; /* dark red */
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .highlight {
+      background-color: #f8f8f8;
+      border-left: 6px solid #8B0000; /* dark red */
+      padding: 30px 20px 40px 20px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .highlight h3 {
+      color: #111;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    .highlight p {
+      font-weight: bold;
+      color: #8B0000; /* dark red */
+      margin-top: 0;
+      margin-bottom: 25px;
+      font-size: 1.1em;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .gallery img {
+      max-width: 280px;
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-booking {
+      display: inline-block;
+      padding: 15px 35px;
+      background-color: #8B0000; /* dark red */
+      color: white;
+      font-weight: bold;
+      font-size: 1.1em;
+      border-radius: 6px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(139,0,0,0.5);
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-booking:hover {
+      background-color: #5a0000; /* darker shade on hover */
+    }
+
+    footer {
+      background-color: #8B0000; /* dark red */
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="dobu-logo.png" alt="DoBu Martial Arts Logo" class="logo" />
+    <h1>DoBu Martial Arts</h1>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="classes.html">Classes</a>
+    <a href="timetable.html">Timetable</a>
+    <a href="instructors.html">Instructors</a>
+    <a href="booking.html">Booking</a>
+    <a href="forum.html">Forum</a>
+    <a href="login-signup.html">Login/Signup</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Welcome to DoBu Martial Arts</h2>
+
+  <div class="highlight">
+    <h3>Discipline. Strength. Respect.</h3>
+    <p>At DoBu Martial Arts, we empower students of all ages through the practice of martial arts, combining tradition with modern training techniques.</p>
+
+    <div class="gallery">
+      <img src="karate-class.png" alt="Karate Class Training" />
+      <img src="martial-arts-kids.png" alt="Kids Martial Arts" />
+      <img src="instructor-demo.png" alt="Instructor Demonstration" />
+    </div>
+
+    <a href="booking.html" class="btn-booking">Book a Free Demo</a>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 DoBu Martial Arts. Website by a proud student developer.</p>
+</footer>
+
+</body>
+</html>
